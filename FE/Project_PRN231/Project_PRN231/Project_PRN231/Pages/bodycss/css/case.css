@@ -1,0 +1,33 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : Feb 19, 2023, 7:20:59 PM
+    Author     : ThangDT
+*/
+
+
+.my-custom-scrollbar {
+    position: relative;   
+}
+.table-wrapper-scroll-y {
+    display: block;
+}
+
+.height-150{
+    height: 150px;
+}
+
+.textarea-vertical{
+    max-height: 100px;
+    min-height: 60px;
+    width: 100%;
+}
+
+
+@media (min-width: 1200px){
+    .container {
+        max-width: 92%;
+    }
+}

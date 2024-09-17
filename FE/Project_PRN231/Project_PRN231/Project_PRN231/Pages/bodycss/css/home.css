@@ -1,0 +1,319 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Jan 31, 2023, 1:00:57 PM
+    Author     : vusyl
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: white;
+    
+
+}
+
+.header{
+    width: 100%;
+    height: 5%;
+    padding: 10px 0px 0px 0px;
+}
+.header ul li{
+    display:inline-block ;
+    margin-right: 100px;
+    align-items: center;
+    color: white;
+
+
+}
+.header ul li a{
+    color: white;
+
+}
+.gg{
+    margin-left: 50px;
+}
+.login{
+    float: right;
+}
+.login a:hover{
+    cursor: pointer;
+    color: red;
+}
+.login a{
+    margin-left: 50px;
+    text-decoration: none;
+
+}
+.header{
+    background-color: #006DB0;
+
+}
+.menu{
+
+    width: 100%;
+    height: 10%;
+    margin-top: 50px;
+
+
+}
+.menu a:hover{
+    cursor: pointer;
+    color: aqua;
+}
+.menu ul{
+    float: right;
+    margin-right: 10px;
+    position: relative;
+
+}
+.menu img{
+    max-width: 100%;
+    vertical-align: middle;
+    padding: 10px 100px;
+
+}
+
+.menu ul li{
+    display:inline-block ;
+    color: black;
+    margin-left: 30px;
+
+
+
+
+}
+.menu ul li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    float: left;
+}
+
+.body{
+    width: 100%;
+    height: 60%;
+
+
+}
+img{
+    object-fit: cover; 
+   
+}
+.body .content{
+    width: 50%;
+    height: 1000px;
+    margin: auto;
+    font-size: 20px;
+    word-spacing: 10px;
+}
+.body .content p{
+    margin-bottom: 40px;
+}
+
+.body h2{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    
+}
+.body h1{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    color: #03e9f4;
+    
+}
+
+.footer{
+    background-color: #6D787F;
+    width: 100%;
+    height: 20%;
+
+}
+
+.footer li{
+    color: white;
+    list-style: none;
+    padding: 70px 0px 100px 100px;
+}
+.box1 li{
+    width: 15%;
+    margin: 0 auto;
+    color: white;
+    float: left;
+    word-spacing: 5px;
+}
+.box2 li{
+    width: 20%;
+    margin: 0 auto;
+    color: white;
+    float: left;
+    color: white;
+    word-spacing: 5px;
+}
+.box3 li{
+    width: 15%;
+    margin: 0 auto;
+    color: white;
+    float: left;
+    color: white;
+    word-spacing: 5px;
+}
+.box4 li{
+    width: 15%;
+    margin: 0 auto;
+    color: white;
+    float: left;
+    color: white;
+    word-spacing: 5px;
+}
+.footerend{
+    color: #666666;
+    background-color: black;
+    width: 100%;
+    height: 5%;
+    padding: 10px 0px 0px 0px;
+    text-align: center;
+}
+.body h1{
+    margin-top: 20px;
+    text-align: center;
+}
+.dropdown-menu{
+    position: relative;
+}
+
+#breadcrumb {
+    background: url("https://theme.hstatic.net/1000274747/1000766427/14/image_breadcrumb_bg.png?v=45");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 300px;
+    position: relative;
+}
+
+section{
+    display: block;
+}
+div {
+    display: block;
+}
+.wrapper {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+#breadcrumb .breadcrumb-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text-center {
+    text-align: center !important;
+}
+#breadcrumb .breadcrumb-content .breadcrumb-title {
+    color: #006db0;
+    margin: 0 0 15px;
+}
+#PageContainer {
+    overflow: hidden;
+}
+.main-content {
+    display: block;
+}
+#collection-services {
+    padding: 50px 0px;
+    background: #ffffff;
+}
+
+.wrapper {
+
+    max-width: 1180px;
+    margin: 0 auto;
+
+}
+.h1-seo {
+    font-size: 0px !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+
+h1, h2, h3 {
+    line-height: normal !important;
+    font-weight: normal !important;
+}
+.text-center {
+    text-align: center !important;
+}
+#collection-services .service-overview h2 {
+    color: #ff789e;
+    margin: 0px 0px 15px 0px;
+}
+#collection-services .service-overview .service-overview-desc {
+    color: #222222;
+    width: 66.6%;
+    margin: auto;
+    margin-bottom: 30px;
+}
+.grid, .grid--rev, .grid--full, .grid-uniform {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: -30px;
+}
+/* @media only screen and (min-width: 769px)
+.large--four-twelfths{
+    width: 33.333%;
+} */
+.grid__item {
+    box-sizing: border-box;
+    float: left;
+    min-height: 1px;
+    padding-left: 30px;
+    vertical-align: top;
+    width: 100%;
+}
+#collection-services .service-wrapper {
+    margin-bottom: 30px;
+    box-shadow: 0 0 30px rgb(0 0 0 / 20%);
+    transition: all 0.3s ease;
+}
+#collection-services .service-wrapper .service-img{
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+img{
+    max-width: 100%;
+}
+#collection-services .service-wrapper .service-title {
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+#collection-services .service-wrapper .service-desc {
+    margin-bottom: 15px;
+    padding: 0px 15px;
+}
+#collection-services .service-wrapper .btnViewServiceDetail {
+    height: 40px;
+    line-height: 40px;
+    padding: 0px 30px;
+    display: inline-block;
+    transition: all 0.3s ease;
+    border: 1px solid #4385d1;
+    margin-bottom: 15px;
+    background-color: #4385d1;
+}
+
+
+
+
+

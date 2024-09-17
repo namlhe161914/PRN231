@@ -1,0 +1,294 @@
+<html>
+
+<head>
+    <title>Register</title>
+    <style>
+        /*signin*/
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(20, 163, 184);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: -20px 0 50px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 100;
+            line-height: 20px;
+            letter-spacing: .5px;
+            margin: 20px 0 30px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        a {
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 15px 0;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+            position: relative;
+            overflow: hidden;
+            width: 768px;
+            max-width: 100%;
+            min-height: 480px;
+        }
+
+        .form-container form {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-container {
+            margin: 20px 0;
+        }
+
+        .social-container a {
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .form-container input {
+            background: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+
+        button {
+            border-radius: 20px;
+            border: 1px solid #ff4b2b;
+            background: rgb(1, 57, 79);
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+
+        .icons {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            letter-spacing: 15px;
+            align-items: center;
+        }
+
+        .signupRole {
+            font-family: "Handlee", cursive;
+            justify-content: center;
+            margin: auto 0;
+            padding-top: 70px;
+        }
+
+        .choose-role p {
+            font-size: 20px;
+        }
+
+        .choose-role a {
+            font-size: 35px;
+        }
+
+        .form-container form label {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <div class="container" id="container">
+
+        <div class="form-container sign-up-container">
+            <form id="signup-form" action="http://localhost:5500/api/account" method="post">
+                <h1 style="padding-top: 35px">Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                    <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <!--<span>or use your email for registration</span>-->
+                <select style="background: #eee;
+                            border: none;
+                            padding: 12px 15px;
+                            margin: 8px 0;
+                            width: 100%;" name="txtRole" required>
+                    <option value="Recruiter">Recruiter</option>
+                    <option value="Applicant">Applicant</option>
+
+                </select>
+                <input type="text" placeholder="Username" name="txtUsername" required />
+
+                <input type="password" placeholder="Password" name="txtPassword" required />
+                <input type="password" placeholder="Re-Password" name="txtRePassword" required />
+                <input type="text" placeholder="Name" name="txtName" required />
+
+
+                <input type="text" placeholder="Address" name="txtAddress" required />
+                <input type="text" placeholder="Phone Number" name="txtPhone" required />
+                <input type="text" placeholder="Email" name="txtEmail" required />
+
+
+
+                <input
+                    style="background-color: rgb(1,57,79); color: white; width: 50%; border-radius: 5px; margin-top: 20px"
+                    type="submit" value="Sign up" />
+                <!--                    <button>Sign Up</button>-->
+                <a href="Login.html">Sign in</a>
+            </form>
+        </div>
+    </div>
+
+    <div class="footer">
+        <b> Follow me on </b>
+        <div class="icons">
+            <a href="https://github.com/kvaibhav01" target="_blank" class="social"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/vaibhavkhulbe143/" target="_blank" class="social"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://medium.com/@vaibhavkhulbe" target="_blank" class="social"><i class="fab fa-medium"></i></a>
+            <a href="https://twitter.com/vaibhav_khulbe" target="_blank" class="social"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a href="https://linkedin.com/in/vaibhav-khulbe/" target="_blank" class="social"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    document.getElementById('signup-form').addEventListener('submit', async function (event) {
+        event.preventDefault(); // Prevent the default form submission
+        var form = event.target;
+
+        // Extract the input values
+        var username = form.elements.txtUsername.value;
+        var password = form.elements.txtPassword.value;
+        var rePassword = form.elements.txtRePassword.value;
+        var name = form.elements.txtName.value;
+        var address = form.elements.txtAddress.value;
+        var phone = form.elements.txtPhone.value;
+        var email = form.elements.txtEmail.value;
+        var role = form.elements.txtRole.value;
+
+        if (password !== rePassword) {
+            alert('Passwords do not match. Please try again.');
+            return; // Stop further execution
+        }
+
+
+        // Create the account object
+        var account = {
+            "Username": username,
+            "Password": password,
+            "Name": name,
+            "Address": address,
+            "Phone": phone,
+            "Email": email,
+            "Status": 1,
+            "Role": role
+        };
+    //     const response = await fetch('http://localhost:5500/api/account', {
+    //       method: 'GET',
+    //       headers: {
+    //           'Content-Type': 'application/json'
+    //       }
+    //   })
+
+    //     const listAcc = await response.json();
+    //   const aa = listAcc.some(x => x.Username === username);
+    //   if (aa === true) {
+    //       alert("Username has exist. Try again")
+    //       event.preventDefault();
+    //       return;
+    //   } 
+    // // Send the account data to the server
+    // fetch('http://localhost:5500/api/account', {
+    //   method: 'POST',
+    //   headers: {
+    //     'Content-Type': 'application/json'
+    //   },
+    //   body: JSON.stringify(account)
+    // })
+    // .then(response => {
+    //   if (response.ok) {
+    //     // Account created successfully
+    //       alert('Account created successfully');
+    //       window.location.href = 'Login.html'; // Redirect to Login.html
+
+        fetch('https://demoassign1prn231.azurewebsites.net/api/Auth/register', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(account)
+        })
+            .then(async (response) => {
+                if (response.ok) {
+                    // Account created successfully
+                    alert('Account created successfully');
+                    window.location.href = 'Login.html';
+                } else {
+                    if (response.status === 400) { // Check for Bad Request
+                        const errorText = await response.text();
+                        alert(errorText); // Show the error message
+                    } else {
+                        console.error("Response not ok:", response.status, response.statusText);
+                        alert("An error occurred, please try again later"); // Generic error message
+                    }
+                }
+            })
+            .catch(error => {
+                console.error('An error occurred:', error);
+                alert("An error occurred, please try again later"); // Generic error message
+            });
+    });
+</script>

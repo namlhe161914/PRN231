@@ -1,0 +1,760 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Topic Listing Contact Page</title>
+
+    <!-- CSS FILES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Open+Sans&display=swap"
+        rel="stylesheet">
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="css/bootstrap-icons.css" rel="stylesheet">
+
+    <link href="css/templatemo-topic-listing.css" rel="stylesheet">
+    <!--
+
+TemplateMo 590 topic listing
+
+https://templatemo.com/tm-590-topic-listing
+
+-->
+</head>
+
+<body class="topics-listing-page" id="top">
+
+    <main>
+
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi-back"></i>
+                    <span>Topic</span>
+                </a>
+
+                <div class="d-lg-none ms-auto me-4">
+                    <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-lg-5 me-lg-auto">
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_1">Home</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_2">Browse Topics</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_3">How it works</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_4">FAQs</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link click-scroll" href="index.html#section_5">Contact</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#section_5" id="navbarLightDropdownMenuLink"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a id="cv" class="dropdown-item" href="ViewCV.html">View CV</a></li>
+
+                                <li><a class="dropdown-item active" href="JobList.html">Job List</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <div class="d-none d-lg-block nav-item dropdown">
+                        <a href="#top" class="navbar-icon bi-person smoothscroll"></a>
+                        <div class="auth-info-container">
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="navbarLightDropdownMenuLink">
+                                <li><a class="dropdown-item" id="auth-action" href="#" onclick="logout()">Login</a></li>
+                            </ul>
+                            <div class="user-info"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+
+
+        <section class="hero-section d-flex justify-content-center align-items-center" id="section_1">
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-lg-5 col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index.html">Homepage</a></li>
+
+                                <li class="breadcrumb-item active" aria-current="page">Job List</li>
+                            </ol>
+                        </nav>
+
+                        <!-- <h2 class="text-white">View CV</h2> -->
+                    </div>
+
+                </div>
+                <div class="row">
+
+                    <div class="col-lg-8 col-12 mx-auto">
+                        <h1 class="text-white text-center">Job Details</h1>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="section-padding section-bg">
+            <div class="container">
+                <div class="row">
+
+
+                    <div class="col-lg-6 col-md-8 col-12 mx-auto my-5">
+                        <form id="addJob" method="post" class="custom-form contact-form" role="form">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="jobname" id="jobname" class="form-control"
+                                            placeholder="Name" required="">
+
+                                        <label for="floatingInput">Job Name</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="address" id="address" class="form-control"
+                                            placeholder="Email address" required="">
+
+                                        <label for="floatingInput">Address</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                        <input type="text" name="jobRequire" id="name" class="form-control"
+                                            placeholder="Name" required="">
+
+                                        <label for="floatingInput">Job Require</label>
+                                    </div>
+                                    <div class="form-floating">
+                                        <input type="text" name="salary" id="name" class="form-control"
+                                            placeholder="Name" required="">
+
+                                        <label for="floatingInput">Salary</label>
+                                    </div>
+                                </div>
+
+
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="date" name="startDate" id="startDate" class="form-control"
+                                            placeholder="Email address" required="">
+
+                                        <label for="floatingInput">Start Date</label>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-12">
+                                    <div class="form-floating">
+                                        <input type="date" name="endDate" id="endDate" class="form-control"
+                                            placeholder="Email address" required="">
+
+                                        <label for="floatingInput">End Date</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-12 col-12">
+                                    <div class="form-floating">
+                                        <textarea class="form-control" id="message" name="jd"
+                                            placeholder="Tell me about the project" required></textarea>
+
+                                        <label for="floatingTextarea">Job Description</label>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto">
+                                    <button id="deleteBtn" type="button" class="form-control delete-btn"
+                                        hidden>Delete</button>
+                                </div>
+
+                                <div class="col-lg-4 col-12 ms-auto text-center">
+                                    <button id="applyJob" type="button" class="form-control apply-btn mx-auto">Apply
+                                        Job</button>
+                                    <ul id="cvList" class="d-flex flex-column align-items-center"></ul>
+                                </div>
+
+
+                                <div class="col-lg-4 col-12 ms-auto">
+                                    <button id="smBtn" type="submit" class="form-control">Submit</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <!-- <div class="col-lg-5 col-12 mx-auto mt-5 mt-lg-0">
+
+                    </div> -->
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer section-padding">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-3 col-12 mb-4 pb-2">
+                    <a class="navbar-brand mb-2" href="index.html">
+                        <i class="bi-back"></i>
+                        <span>Topic</span>
+                    </a>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6">
+                    <h6 class="site-footer-title mb-3">Resources</h6>
+
+                    <ul class="site-footer-links">
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Home</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">How it works</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">FAQs</a>
+                        </li>
+
+                        <li class="site-footer-link-item">
+                            <a href="#" class="site-footer-link">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-6 mb-4 mb-lg-0">
+                    <h6 class="site-footer-title mb-3">Information</h6>
+
+                    <p class="text-white d-flex mb-1">
+                        <a href="tel: 305-240-9671" class="site-footer-link">
+                            305-240-9671
+                        </a>
+                    </p>
+
+                    <p class="text-white d-flex">
+                        <a href="mailto:info@company.com" class="site-footer-link">
+                            info@company.com
+                        </a>
+                    </p>
+                </div>
+
+                <div class="col-lg-3 col-md-4 col-12 mt-4 mt-lg-0 ms-auto">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            English</button>
+
+                        <ul class="dropdown-menu">
+                            <li><button class="dropdown-item" type="button">Thai</button></li>
+
+                            <li><button class="dropdown-item" type="button">Myanmar</button></li>
+
+                            <li><button class="dropdown-item" type="button">Arabic</button></li>
+                        </ul>
+                    </div>
+
+                    <p class="copyright-text mt-lg-5 mt-4">Copyright © 2048 Topic Listing Center. All rights reserved.
+                        <br><br>Design: <a rel="nofollow" href="https://templatemo.com" target="_blank">TemplateMo</a>
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- JAVASCRIPT FILES -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
+    <script src="js/custom.js"></script>
+
+    <script>
+        var jobId = getQueryParameter("id");
+        var deleteButton = document.getElementById('deleteBtn');
+        var form = document.getElementById('addJob');
+        async function getUserInfo() {
+            const token = localStorage.getItem('Token');
+            const response = await fetch("https://demoassign1prn231.azurewebsites.net/api/Auth/UserInfo", {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                return data.accountId;
+            } else {
+                console.error("Error fetching user info:", response.statusText);
+                return null;
+            }
+        }
+
+        async function initializeForm() {
+            const accId = await getUserInfo();
+
+            if (jobId != null) {
+                deleteButton.removeAttribute('hidden');
+                fetch('https://demoassign1prn231.azurewebsites.net/api/job/' + jobId)
+                    .then(response => response.json())
+                    .then(data => {
+                        // Điền thông tin công việc vào các trường của biểu mẫu
+                        form.elements.jobname.value = data.jobName;
+                        form.elements.address.value = data.address;
+                        form.elements.jobRequire.value = data.jobRequire;
+                        form.elements.salary.value = data.salary;
+                        form.elements.startDate.value = new Date(data.startDate).toISOString().split('T')[0];
+                        form.elements.endDate.value = new Date(data.endDate).toISOString().split('T')[0];
+                        form.elements.jd.value = data.jobDesc;
+                    })
+                    .catch(error => {
+                        console.error('An error occurred:', error);
+                        // Xử lý lỗi theo cách phù hợp
+                    });
+
+
+                // Gắn sự kiện click cho nút "Apply Job"
+                document.getElementById('applyJob').addEventListener('click', function () {
+                    var CVReplace;
+
+                    // Gọi API để lấy danh sách CV của tài khoản
+                    fetch('https://demoassign1prn231.azurewebsites.net/api/CV/GetCvsByAccount/' + accId)
+                        .then(response => response.json())
+                        .then(data1 => {
+                            // Hiển thị danh sách CV
+
+
+                            if (data1.length === 0) {
+                                alert("You need to upload CV first");
+                            } else {
+                                fetch('https://demoassign1prn231.azurewebsites.net/api/CV/GetCvsByJob/' + jobId)
+                                    .then(response => response.json())
+                                    .then(data2 => {
+                                        // Tìm và xóa apply có cvId trùng với tham số cvId
+                                        CVReplace = data2.find(cv => cv.accountId === accId);
+                                        if (CVReplace) {
+
+                                            var confirmation = confirm("You have aready applied for this job. Apply again?");
+                                            if (confirmation) {
+                                                // fetch('https://demoassign1prn231.azurewebsites.net/api/Apply/GetApplyByJobId/' + jobId)
+                                                //     .then(response => response.json())
+                                                //     .then(data3 => {
+                                                //         // Tìm và xóa apply có cvId trùng với tham số cvId
+                                                //         var applyToDelete = data3.find(apply => apply.cvId === CVReplace.cvId);
+                                                //         if (applyToDelete) {
+                                                //             var deleteUrl = `https://demoassign1prn231.azurewebsites.net/api/Apply/${applyToDelete.applyId}`;
+
+                                                //             // Gửi yêu cầu xóa apply qua API
+                                                //             fetch(deleteUrl, { method: 'DELETE' })
+                                                //                 .then(response => {
+                                                //                     if (response.ok) {
+                                                //                         console.log('Apply đã được xóa thành công.');
+                                                //                     } else {
+                                                //                         console.error('Lỗi xóa apply.');
+                                                //                     }
+                                                //                 })
+                                                //                 .catch(error => {
+                                                //                     console.error('Lỗi kết nối tới API:', error);
+                                                //                 });
+                                                //         } else {
+                                                //             console.log('Không tìm thấy apply với cvId trùng khớp.');
+                                                //         }
+                                                //     })
+                                                //     .catch(error => {
+                                                //         console.error('Lỗi kết nối tới API:', error);
+                                                //     });
+                                                displayCVList(data1, CVReplace);
+                                            } else {
+                                                return;
+                                            }
+
+                                        } else {
+                                            console.log('Không tìm thấy apply với cvId trùng khớp.');
+                                            displayCVList(data1, CVReplace);
+                                            console.log(data1);
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Lỗi kết nối tới API:', error);
+                                    });
+
+                            }
+                            console.log(data);
+                        })
+                        .catch(error => {
+                            console.error('An error occurred:', error);
+                            // Xử lý lỗi theo cách phù hợp
+                        });
+                    console.log(accId);
+
+                });
+
+
+            } else {
+                deleteButton.setAttribute('hidden', true);
+            }
+
+            document.querySelector('.delete-btn').addEventListener('click', function () {
+                // Hiển thị cảnh báo
+                var confirmation = confirm('Delete this job?');
+
+                // Nếu người dùng chấp nhận xóa, gửi biểu mẫu
+                if (confirmation) {
+                    deleteJob();
+
+                    // document.getElementById('addJob').submit();
+                }
+            });
+
+            document.getElementById('addJob').addEventListener('submit', async function (event) {
+                event.preventDefault(); // Prevent the default form submission
+                var form = event.target;
+
+                var jobname = form.elements.jobname.value;
+                var address = form.elements.address.value;
+                var jobRequire = form.elements.jobRequire.value;
+                var salary = form.elements.salary.value;
+                var startDate = form.elements.startDate.value;
+                var endDate = form.elements.endDate.value;
+                var jd = form.elements.jd.value;
+                var Job = {
+                    "jobId": jobId,
+                    "jobName": jobname,
+                    "jobDesc": jd,
+                    "jobRequire": jobRequire,
+                    "address": address,
+                    "salary": salary,
+                    "startDate": startDate,
+                    "endDate": endDate,
+                    "accountId": accId
+
+                };
+                var Job2 = {
+                    "jobName": jobname,
+                    "jobDesc": jd,
+                    "jobRequire": jobRequire,
+                    "address": address,
+                    "salary": salary,
+                    "startDate": startDate,
+                    "endDate": endDate,
+                    "accountId": accId
+
+                };
+
+                if (startDate >= endDate) {
+                    // Hiển thị thông báo lỗi cho người dùng
+                    alert('Start date must be < End date. Try again.');
+                } else {
+                    if (jobId != null) {
+                        fetch('https://demoassign1prn231.azurewebsites.net/api/job/UpdateJob/' + jobId, {
+                            method: 'PUT', // Hoặc sử dụng 'PATCH' nếu chỉ muốn cập nhật một phần thông tin
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(Job)
+                        })
+                            .then(response => {
+                                if (response.ok) {
+                                    // Cập nhật công việc thành công
+                                    alert('Job updated successfully');
+                                    window.location.href = 'JobList.html'; // Chuyển hướng đến trang JobList.html
+
+                                } else {
+                                    // Cập nhật công việc thất bại
+                                    console.error('Failed to update job');
+                                    // Xử lý lỗi theo cách phù hợp
+                                }
+                            })
+                            .catch(error => {
+                                console.error('An error occurred:', error);
+                                // Xử lý lỗi theo cách phù hợp
+                            });
+                    } else {
+                        fetch('https://demoassign1prn231.azurewebsites.net/api/job/CreateJob', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify(Job2)
+                        })
+                            .then(response => {
+                                if (response.ok) {
+                                    // Account created successfully
+                                    alert('Job created successfully');
+                                    window.location.href = 'JobList.html'; // Chuyển hướng đến trang JobList.html
+
+                                } else {
+                                    // Account creation failed
+                                    console.error('Faileddd to create job');
+                                    // Handle the error appropriately
+                                }
+                            })
+                            .catch(error => {
+                                console.error('An error occurred:', error);
+                                // Handle the error appropriately
+                            });
+                        console.log(Job);
+                    }
+                }
+            });
+        }
+        function displayCVList(cvList, CVReplace) {
+            console.log(CVReplace)
+            var cvListContainer = document.getElementById('cvList');
+
+            // Xóa các phần tử CV hiện có trong danh sách
+            while (cvListContainer.firstChild) {
+                cvListContainer.removeChild(cvListContainer.firstChild);
+            }
+
+            // Tạo các phần tử danh sách CV và gán sự kiện cho mỗi CV
+            cvList.forEach(cv => {
+                var cvItem = document.createElement('li');
+                cvItem.innerText = cv.cvName;
+                cvItem.addEventListener('click', function () {
+                    confirmApplyCV(cv.cvId, CVReplace);
+                });
+                cvListContainer.appendChild(cvItem);
+            });
+        }
+        function confirmApplyCV(cvId, CVReplace) {
+            var confirmation = confirm('Apply this CV to the job?');
+
+            if (confirmation) {
+                console.log(jobId);
+                if (CVReplace) {
+                    fetch('https://demoassign1prn231.azurewebsites.net/api/Apply/GetApplyByJobId/' + jobId)
+                        .then(response => response.json())
+                        .then(data3 => {
+                            // Tìm và xóa apply có cvId trùng với tham số cvId
+                            var applyToDelete = data3.find(apply => apply.cvId === CVReplace.cvId);
+                            if (applyToDelete) {
+                                var deleteUrl = `https://demoassign1prn231.azurewebsites.net/api/Apply/${applyToDelete.applyId}`;
+
+                                // Gửi yêu cầu xóa apply qua API
+                                fetch(deleteUrl, { method: 'DELETE' })
+                                    .then(response => {
+                                        if (response.ok) {
+                                            console.log('Apply đã được xóa thành công.');
+                                        } else {
+                                            console.error('Lỗi xóa apply.');
+                                        }
+                                    })
+                                    .catch(error => {
+                                        console.error('Lỗi kết nối tới API:', error);
+                                    });
+                            } else {
+                                console.log('Không tìm thấy apply với cvId trùng khớp.');
+                            }
+                        })
+                        .catch(error => {
+                            console.error('Lỗi kết nối tới API:', error);
+                        });
+                }
+                applyCV(cvId);
+
+            }
+        }
+
+        function applyCV(cvId) {
+            var applyData = {
+                cvId: cvId,
+                jobId: jobId
+            };
+
+            // Gửi yêu cầu apply CV đến endpoint "https://demoassign1prn231.azurewebsites.net/api/Apply"
+            fetch('https://demoassign1prn231.azurewebsites.net/api/Apply', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(applyData)
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Apply thành công
+                        alert('CV applied successfully');
+                        location.reload();
+                        // Xử lý sau khi apply thành công, ví dụ chuyển hướng đến trang khác
+                    } else {
+                        // Apply thất bại
+                        console.error('Failed to apply CV');
+                        // Xử lý lỗi theo cách phù hợp
+                    }
+                })
+                .catch(error => {
+                    console.error('An error occurred:', error);
+                    // Xử lý lỗi theo cách phù hợp
+                });
+        }
+        function getQueryParameter(parameterName) {
+            var urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(parameterName);
+        }
+
+        function deleteJob() {
+            // Gửi yêu cầu xóa công việc đến máy chủ
+            fetch('https://demoassign1prn231.azurewebsites.net/api/job/' + jobId, {
+                method: 'DELETE',
+                headers: {
+                    'Content-Type': 'application/json'
+                }
+            })
+                .then(response => {
+                    if (response.ok) {
+                        // Xóa công việc thành công
+                        alert('Job deleted successfully');
+                        window.location.href = 'JobList.html'; // Chuyển hướng đến trang JobList.html
+
+                    } else {
+                        // Xóa công việc thất bại
+                        console.error('Failed to delete job');
+                        // Xử lý lỗi theo cách phù hợp
+                    }
+                })
+                .catch(error => {
+                    console.error('An error occurred:', error);
+                    // Xử lý lỗi theo cách phù hợp
+                });
+        }
+
+        // Gọi hàm khởi tạo biểu mẫu khi tải trang
+        initializeForm();
+
+    </script>
+
+    <style>
+        .delete-btn {
+            background-color: #ffffff;
+            color: #fff;
+            border: 5px;
+            padding: 10px 20px;
+            font-weight: bolder;
+            font-size: larger;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .delete-btn:hover {
+            background-color: rgb(232, 230, 229);
+        }
+    </style>
+    <script>
+
+        const token = localStorage.getItem('Token');
+        const authActionLink = document.getElementById('auth-action');
+
+        async function getUserInfo() {
+            const response = await fetch("https://demoassign1prn231.azurewebsites.net/api/Auth/UserInfo", {
+                headers: {
+                    'Authorization': `Bearer ${token}`
+                }
+            });
+
+            if (response.ok) {
+                const data = await response.json();
+                document.querySelector('.user-info').textContent = data.name;
+                accId = data.accountId;
+                // console.log(accId);
+                // User is logged in
+                authActionLink.textContent = "Log Out";
+                authActionLink.href = "../Login.html";
+                const cv = document.getElementById('cv');
+                if (data.role === 'Applicant') {
+                    // console.log("aasasa");
+                    cv.href = "ListCVS.html";
+                } else {
+                    cv.href = "ViewCV.html";
+                    // console.log("cccc");
+                }
+                // Xử lý hiển thị / ẩn nút Add Job
+                const deleteBtn = document.getElementById('deleteBtn');
+                const submitBtn = document.getElementById('smBtn');
+                const applyJob = document.getElementById("applyJob");
+                if (data.role === 'Recruiter') {
+                    applyJob.style.display = 'none';
+                    deleteBtn.style.display = 'block';
+                    submitBtn.style.display = 'block';
+                } else if (data.role === 'Applicant') {
+                    applyJob.style.display = 'block';
+                    deleteBtn.style.display = 'none';
+                    submitBtn.style.display = 'none';
+                } else {
+                    applyJob.style.display = 'none';
+                    deleteBtn.style.display = 'none';
+                    submitBtn.style.display = 'none';
+                }
+            } else {
+                authActionLink.textContent = "Login";
+                authActionLink.href = "../Login.html";
+            }
+        }
+
+        getUserInfo();
+
+        function logout() {
+            localStorage.removeItem('Token');
+        }
+    </script>
+    <style>
+        /* CSS cho danh sách cvList */
+        #cvList {
+            list-style: none;
+            padding: 0;
+        }
+
+        #cvList li {
+            margin-bottom: 10px;
+            padding: 10px;
+            background-color: #f2f2f2;
+            border-radius: 10px;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+            /* Thay đổi con trỏ thành hình bàn tay */
+        }
+
+        #cvList li:hover {
+            background-color: #e0e0e0;
+        }
+    </style>
+
+
+</body>
+
+</html>

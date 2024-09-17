@@ -1,0 +1,252 @@
+<html>
+
+<head>
+    <title>Login</title>
+    <style>
+        /*signin*/
+        @import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+            background-color: rgb(20, 163, 184);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: -20px 0 50px;
+            margin-top: 20px;
+        }
+
+        h1 {
+            font-weight: bold;
+            margin: 0;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 100;
+            /*                line-height: 20px;*/
+            letter-spacing: .5px;
+            margin: 20px 0 30px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+
+        a {
+            color: #333;
+            font-size: 14px;
+            text-decoration: none;
+            margin: 15px 0;
+        }
+
+        .container {
+            background: #fff;
+            border-radius: 10px;
+            box-shadow: 0 14px 28px rgba(0, 0, 0, .2), 0 10px 10px rgba(0, 0, 0, .2);
+            position: relative;
+            overflow: hidden;
+            width: 768px;
+            max-width: 100%;
+            min-height: 480px;
+        }
+
+        .form-container form {
+            background: #fff;
+            display: flex;
+            flex-direction: column;
+            padding: 0 50px;
+            height: 100%;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .social-container {
+            margin: 20px 0;
+        }
+
+        .social-container a {
+            border: 1px solid #ddd;
+            border-radius: 50%;
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            margin: 0 5px;
+            height: 40px;
+            width: 40px;
+        }
+
+        .form-container input {
+            background: #eee;
+            border: none;
+            padding: 12px 15px;
+            margin: 8px 0;
+            width: 100%;
+        }
+
+        button {
+            border-radius: 20px;
+            border: 1px solid #ff4b2b;
+            background: rgb(1, 57, 79);
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+        input[type=submit] {
+            cursor: pointer;
+            text-align: center;
+            width: 140px;
+            border-radius: 20px;
+            border: 1px solid #ff4b2b;
+            background: rgb(1, 57, 79);
+            color: #fff;
+            font-size: 12px;
+            font-weight: bold;
+            padding: 12px 45px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: transform 80ms ease-in;
+        }
+
+
+
+        .footer {
+            margin-top: 25px;
+            text-align: center;
+        }
+
+
+        .icons {
+            display: flex;
+            width: 30px;
+            height: 30px;
+            letter-spacing: 15px;
+            align-items: center;
+        }
+
+        .signupRole {
+            font-family: "Handlee", cursive;
+            justify-content: center;
+            margin: auto 0;
+            padding-top: 70px;
+        }
+
+        .choose-role p {
+            font-size: 20px;
+        }
+
+        .choose-role a {
+            font-size: 35px;
+        }
+
+        .form-container form label {
+            text-align: left;
+        }
+    </style>
+</head>
+
+<body>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+    <div class="container" id="container">
+        <div class="form-container sign-in-container">
+            <form id="loginForm" action="http://localhost:8000/api/login" method="post">
+                <h1>Sign in</h1>
+                <input type="text" placeholder="Username" name="txtUsername" id="usernameInput" required />
+                <!-- Username -->
+
+                <input type="password" placeholder="Password" name="txtPassword" id="passwordInput" required />
+                <!--Password-->
+                <!--<a href="forgotUsername.jsp">Forgot your username?</a> <a href="chooseRoleForgot.jsp">Forgot your password?</a>-->
+                <input type="submit" value="Sign in" />
+                <a href="Signup.html">Sign up</a>
+            </form>
+        </div>
+        <div class="overlay-container">
+
+            <div class="overlay-panel overlay-right">
+                <h1>Hello, Friend!</h1>
+                <p>Enter your personal details and start journey with us</p>
+                <button class="ghost" id="signUp">Sign Up</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer">
+        <b> Follow me on </b>
+        <div class="icons">
+            <a href="https://github.com/kvaibhav01" target="_blank" class="social"><i class="fab fa-github"></i></a>
+            <a href="https://www.instagram.com/vaibhavkhulbe143/" target="_blank" class="social"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://medium.com/@vaibhavkhulbe" target="_blank" class="social"><i class="fab fa-medium"></i></a>
+            <a href="https://twitter.com/vaibhav_khulbe" target="_blank" class="social"><i
+                    class="fab fa-twitter-square"></i></a>
+            <a href="https://linkedin.com/in/vaibhav-khulbe/" target="_blank" class="social"><i
+                    class="fab fa-linkedin"></i></a>
+        </div>
+    </div>
+</body>
+
+</html>
+<script>
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+        event.preventDefault(); // Prevent form submission
+        var form = event.target;
+        var username = form.elements.txtUsername.value;
+        var password = form.elements.txtPassword.value;
+
+        async function postJSON(data) {
+            try {
+                const response = await fetch("https://demoassign1prn231.azurewebsites.net/api/Auth/login", {
+                    method: "POST", // or 'PUT'
+                    headers: {
+                        "Content-Type": "application/json",
+                    },
+                    body: JSON.stringify(data),
+                });
+
+                if (response.ok) { 
+                    const res = await response.text();
+
+                    if (res != null) { 
+                        // alert("Login success");
+                        console.log(res);
+                        localStorage.setItem('Token', res);
+                        window.location.href = 'templatemo_590_topic_listing/index.html'; 
+                    } else {
+                        alert("Login fail");
+                    }
+                } else {
+                    if (response.status === 400) { 
+                        const res = await response.text();
+                        alert(res);
+                    } else {
+                        console.error("Error:", response.status, response.statusText);
+                    }
+                }
+            } catch (error) {
+                console.error("Error:", error);
+            }
+        }
+
+        const data = {
+            "Username": username,
+            "Password": password
+        };
+        postJSON(data);
+    });
+</script>
